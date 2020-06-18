@@ -13,23 +13,25 @@
 <h4>Submit your information</h4>
 <hr>
 	<form:form action="displayUserInfo" modelAttribute="user">
-Name: <form:input path="name" required = "true" placeholder = "Enter Name"/>
+Name: <form:input path="name" required="true" placeholder="Enter name"/>
 		<p />
-Gender: <form:radiobuttons path="gender" items="${genderMap}" required = "true"/>
+Gender: <form:radiobuttons path="gender" items="${genderMap}" required="true" />
 		<p />
       
-Country: <form:select path="country" items="${countryMap}" required = "true"/>
+Country: <form:select path="country" items="${countryMap}" />
 		<p />
 Introduction: 
-        <form:textarea path="introduction" required = "true"/>
+        <form:textarea path="introduction" required="true"/>
 		<p />
 Visited countries: 
-        China: <form:checkbox path="visitedCountries" value="China" />
+        China: <form:checkbox path="visitedCountries" value="China"/>
         Taiwan:   <form:checkbox path="visitedCountries" value="Taiwan" />
         Germany     <form:checkbox path="visitedCountries" value="Germany" />
         Bhutan       <form:checkbox path="visitedCountries" value="Bhutan" />
 
 		<p />
+		Accept agreement: <form:checkbox path="" value="accept" required="true"/>
+		<p/>
 		<input type="submit" value="Submit">
 	</form:form>
 </body>
