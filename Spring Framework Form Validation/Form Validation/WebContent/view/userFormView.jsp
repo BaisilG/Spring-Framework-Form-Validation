@@ -15,10 +15,10 @@
 	<form:form action="displayUserInfo" modelAttribute="user">
 Name: <form:input path="name" required = "true" placeholder = "Enter Name"/>
 		<p />
-Gender: <form:radiobuttons path="gender" items="${genderMap}" />
+Gender: <form:radiobuttons path="gender" items="${genderMap}" required = "true"/>
 		<p />
       
-Country: <form:select path="country" items="${countryMap}" />
+Country: <form:select path="country" items="${countryMap}" required = "true"/>
 		<p />
 Introduction: 
         <form:textarea path="introduction" />
