@@ -13,7 +13,7 @@
 <h4>Submit your information</h4>
 <hr>
 	<form:form action="displayUserInfo" modelAttribute="user">
-Name: <form:input path="name" />
+Name: <form:input path="name" required = "true"/>
 		<p />
 Gender: <form:radiobuttons path="gender" items="${genderMap}" />
 		<p />
