@@ -21,7 +21,7 @@ Gender: <form:radiobuttons path="gender" items="${genderMap}" required = "true"/
 Country: <form:select path="country" items="${countryMap}" required = "true"/>
 		<p />
 Introduction: 
-        <form:textarea path="introduction" />
+        <form:textarea path="introduction" required = "true"/>
 		<p />
 Visited countries: 
         China: <form:checkbox path="visitedCountries" value="China" />
